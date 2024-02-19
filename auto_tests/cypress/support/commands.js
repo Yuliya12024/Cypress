@@ -34,3 +34,8 @@ Cypress.Commands.add('login', (email, password) => {
    // "cy.test1" : "cypress run -- browser-electron --test1",
         // "cy.test2" : "cypress run -- browser-electron --test2",
         // "cy.test3" : "cypress run -- browser-electron --test3"
+
+
+    // import testData from '../fixtures/test.json'     
+    // cy.fixture('user').then(user => {
+    // })
