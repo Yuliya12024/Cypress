@@ -11,7 +11,10 @@ describe('Verify STANDARD_USER', () => {
     cy.login(STANDARD_USER, USER_PASSWORD);
   })
 
- it('Standard user' , () => {
+it('Standart user login' , () => {
+  });
+ 
+  it('Standard user add product to cart' , () => {
   cy
     .get('[data-test="add-to-cart-sauce-labs-backpack"]')
     .click()
@@ -61,7 +64,7 @@ describe('Verify LOCKED_OUT_USER', () => {
  it('Locked user login' , () => {
   });
 
- it('Eror for locked user', () => {
+ it('Error for locked user', () => {
     cy.get('[data-test="error"]').should('have.text', 'Epic sadface: Sorry, this user has been locked out.')
   })
 })
